@@ -5,7 +5,7 @@ import light from "./basic/Light.js";
 import resize from "./basic/Resize.js";
 import loopMachine from "./basic/LoopMachine.js";
 import controls from "./basic/OrbitImplementation.js"
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
+import { GLTFLoader } from '../node_modules/three/examples/jsm/loaders/GLTFLoader.js';
 import * as THREE from 'three';
 
 camera.position.set( 0.04, 1.04 , -2.75) //-0.21,1.59,-4.17
