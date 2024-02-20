@@ -18,13 +18,13 @@ loader.load('scene.gltf', async function(gtlf){
     model.scale.set(10,10,10)
     camera.lookAt(model.position)
     model.position.set(0,0,0) //-5,1,0
-    model.traverse((child)=>{
-         if (child.isMesh) {
-            // child.geometry.computeVertexNormals();
-            // child.geometry.normalizeNormals();
-            child.material.shading = THREE.SmoothShading;
-        }
-    })
+    // model.traverse((child)=>{
+    //      if (child.isMesh) {
+    //         // child.geometry.computeVertexNormals();
+    //         // child.geometry.normalizeNormals();
+    //         child.material.shading = THREE.SmoothShading;
+    //     }
+    // })
     await renderer.compileAsync( model, camera, scene );
 
 	scene.add(model);
